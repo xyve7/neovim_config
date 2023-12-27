@@ -26,7 +26,12 @@ g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1
 
 -- set termguicolors to enable highlight groups
-vim.opt.termguicolors = true
+cfg.termguicolors = true
+
+
+-- Enable spell checker
+cfg.spell = true
+cfg.spelllang = { 'en_us' }
 
 -- Run commands
 

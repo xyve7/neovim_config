@@ -66,6 +66,7 @@ return {
 				"hrsh7th/vim-vsnip",
 			},
 		},
-		'nvim-treesitter/nvim-treesitter'
+		'nvim-treesitter/nvim-treesitter',
+		'f3fora/cmp-spell'
 	},
 }
