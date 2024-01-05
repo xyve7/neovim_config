@@ -1,6 +1,7 @@
 return {
 	{
 		"folke/tokyonight.nvim",
+		"EdenEast/nightfox.nvim",
 		"neovim/nvim-lspconfig",
 		"williamboman/mason.nvim",
 		{
