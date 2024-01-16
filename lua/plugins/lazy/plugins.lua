@@ -2,6 +2,7 @@ return {
 	{
 		"folke/tokyonight.nvim",
 		"EdenEast/nightfox.nvim",
+		"rebelot/kanagawa.nvim",
 		"neovim/nvim-lspconfig",
 		"williamboman/mason.nvim",
 		{
@@ -67,7 +68,7 @@ return {
 				"hrsh7th/vim-vsnip",
 			},
 		},
-		'nvim-treesitter/nvim-treesitter',
-		'f3fora/cmp-spell'
+		"nvim-treesitter/nvim-treesitter",
+		"f3fora/cmp-spell",
 	},
 }
