@@ -100,7 +100,6 @@ cmp.setup.cmdline(":", {
 
 -- Set up lspconfig.
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
 -- LSP server setup
 
 lsp.rust_analyzer.setup({
@@ -114,10 +113,16 @@ local clangd_capabilities = vim.deepcopy(capabilities)
 clangd_capabilities["offsetEncoding"] = "utf-8"
 
 lsp.clangd.setup({
+	cmd = {
+		"clangd",
+		"--background-index",
+		"-j=12",
+		"--clang-tidy",
+	},
+	capabilities = clangd_capabilities,
 	init_options = {
 		documentFormatting = true,
 	},
-	capabilities = clangd_capabilities,
 })
 
 lsp.pyright.setup({
