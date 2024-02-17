@@ -29,7 +29,9 @@ fmt.setup({
 		end
 	end,
 })
-
+local winhighlight = {
+	winhighlight = "Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:PmenuSel",
+}
 cmp.setup({
 	snippet = {
 		-- REQUIRED - you must specify a snippet engine
@@ -41,8 +43,8 @@ cmp.setup({
 		end,
 	},
 	window = {
-		-- completion = cmp.config.window.bordered(),
-		-- documentation = cmp.config.window.bordered(),
+		completion = cmp.config.window.bordered(winhighlight),
+		documentation = cmp.config.window.bordered(winhighlight),
 	},
 	mapping = cmp.mapping.preset.insert({
 		["<C-b>"] = cmp.mapping.scroll_docs(-4),
@@ -70,7 +72,6 @@ cmp.setup({
 		{ name = "buffer" },
 	}),
 })
-
 -- Set configuration for specific filetype.
 cmp.setup.filetype("gitcommit", {
 	sources = cmp.config.sources({

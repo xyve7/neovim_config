@@ -71,5 +71,6 @@ return {
 		"nvim-treesitter/nvim-treesitter",
 		"f3fora/cmp-spell",
 		{ "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
+		{ "kepano/flexoki-neovim",     name = "flexoki" },
 	},
 }
