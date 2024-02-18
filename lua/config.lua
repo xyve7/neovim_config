@@ -32,6 +32,9 @@ cfg.termguicolors = true
 cfg.spell = false
 cfg.spelllang = { "en_us" }
 
+-- Set default shell
+cfg.shell = "/usr/bin/zsh"
+
 -- Run commands
 
 -- Set the colorscheme colors
@@ -56,6 +59,7 @@ vim.keymap.set("n", "<leader>wa", ":w<cr>")
 vim.keymap.set("n", "<leader>wq", ":wq<cr>")
 vim.keymap.set("n", "<leader>wqa", ":wqa<cr>")
 vim.keymap.set("n", "<leader>u", ":Telescope undo<cr>")
+vim.keymap.set("n", "<leader>t", ":ToggleTerm name=shell direction=horizontal<cr>")
 
 -- LSP
 -- Show diagnostic window for the error
