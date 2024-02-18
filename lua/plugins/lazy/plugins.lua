@@ -72,5 +72,14 @@ return {
 		"f3fora/cmp-spell",
 		{ "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
 		{ "kepano/flexoki-neovim",     name = "flexoki" },
+		{
+			"debugloop/telescope-undo.nvim",
+			dependencies = { -- note how they're inverted to above example
+				{
+					"nvim-telescope/telescope.nvim",
+					dependencies = { "nvim-lua/plenary.nvim" },
+				},
+			},
+		},
 	},
 }

@@ -55,6 +55,7 @@ vim.keymap.set("n", "<leader>w", ":w<cr>")
 vim.keymap.set("n", "<leader>wa", ":w<cr>")
 vim.keymap.set("n", "<leader>wq", ":wq<cr>")
 vim.keymap.set("n", "<leader>wqa", ":wqa<cr>")
+vim.keymap.set("n", "<leader>u", ":Telescope undo<cr>")
 
 -- LSP
 -- Show diagnostic window for the error
