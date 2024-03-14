@@ -19,20 +19,21 @@ return {
 			dependencies = { "nvim-tree/nvim-web-devicons" },
 		},
 		{
-			{'romgrk/barbar.nvim',
-			dependencies = {
-			  'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
-			  'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
+			{
+				'romgrk/barbar.nvim',
+				dependencies = {
+					'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
+					'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
+				},
+				init = function() vim.g.barbar_auto_setup = false end,
+				opts = {
+					-- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
+					-- animation = true,
+					-- insert_at_start = true,
+					-- …etc.
+				},
+				version = '^1.0.0', -- optional: only update when a new 1.x version is released
 			},
-			init = function() vim.g.barbar_auto_setup = false end,
-			opts = {
-			  -- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
-			  -- animation = true,
-			  -- insert_at_start = true,
-			  -- …etc.
-			},
-			version = '^1.0.0', -- optional: only update when a new 1.x version is released
-		  },
 		},
 		"yamatsum/nvim-cursorline",
 		{
@@ -89,5 +90,14 @@ return {
 				vim.o.timeoutlen = 300
 			end,
 		},
+		{
+			'stevearc/aerial.nvim',
+			opts = {},
+			-- Optional dependencies
+			dependencies = {
+				"nvim-treesitter/nvim-treesitter",
+				"nvim-tree/nvim-web-devicons"
+			},
+		}
 	},
 }
