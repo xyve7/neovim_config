@@ -17,7 +17,7 @@ return {
 			dependencies = { "nvim-tree/nvim-web-devicons" },
 		},
 		{
-			--[[{
+			{
 				"romgrk/barbar.nvim",
 				dependencies = {
 					"lewis6991/gitsigns.nvim", -- OPTIONAL: for git status
@@ -33,7 +33,7 @@ return {
 					-- …etc.
 				},
 				version = "^1.0.0", -- optional: only update when a new 1.x version is released
-			},]]
+			},
 		},
 		"yamatsum/nvim-cursorline",
 		{
@@ -95,12 +95,6 @@ return {
 			-- Optional dependencies
 			dependencies = {
 				"nvim-treesitter/nvim-treesitter",
-				"nvim-tree/nvim-web-devicons",
-			},
-		},
-		{
-			"alvarosevilla95/luatab.nvim",
-			dependencies = {
 				"nvim-tree/nvim-web-devicons",
 			},
 		},

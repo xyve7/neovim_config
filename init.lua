@@ -2,8 +2,7 @@
 require("plugins/lazy")
 
 -- Rest of the plugins
---require("plugins/barbar")
-require("plugins/luatab")
+require("plugins/barbar")
 require("plugins/dashboard-nvim")
 require("plugins/lsp")
 require("plugins/lualine")
