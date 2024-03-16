@@ -1,8 +1,6 @@
 return {
 	{
 		"folke/tokyonight.nvim",
-		"EdenEast/nightfox.nvim",
-		"rebelot/kanagawa.nvim",
 		"neovim/nvim-lspconfig",
 		"williamboman/mason.nvim",
 		{
@@ -19,21 +17,23 @@ return {
 			dependencies = { "nvim-tree/nvim-web-devicons" },
 		},
 		{
-			{
-				'romgrk/barbar.nvim',
+			--[[{
+				"romgrk/barbar.nvim",
 				dependencies = {
-					'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
-					'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
+					"lewis6991/gitsigns.nvim", -- OPTIONAL: for git status
+					"nvim-tree/nvim-web-devicons", -- OPTIONAL: for file icons
 				},
-				init = function() vim.g.barbar_auto_setup = false end,
+				init = function()
+					vim.g.barbar_auto_setup = false
+				end,
 				opts = {
 					-- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
 					-- animation = true,
 					-- insert_at_start = true,
 					-- …etc.
 				},
-				version = '^1.0.0', -- optional: only update when a new 1.x version is released
-			},
+				version = "^1.0.0", -- optional: only update when a new 1.x version is released
+			},]]
 		},
 		"yamatsum/nvim-cursorline",
 		{
@@ -61,6 +61,7 @@ return {
 			dependencies = {
 				"neovim/nvim-lspconfig",
 				"hrsh7th/cmp-nvim-lsp",
+				"hrsh7th/cmp-nvim-lua",
 				"hrsh7th/cmp-buffer",
 				"hrsh7th/cmp-path",
 				"hrsh7th/cmp-cmdline",
@@ -70,8 +71,6 @@ return {
 		},
 		"nvim-treesitter/nvim-treesitter",
 		"f3fora/cmp-spell",
-		{ "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
-		{ "kepano/flexoki-neovim",     name = "flexoki" },
 		{
 			"debugloop/telescope-undo.nvim",
 			dependencies = { -- note how they're inverted to above example
@@ -91,13 +90,20 @@ return {
 			end,
 		},
 		{
-			'stevearc/aerial.nvim',
+			"stevearc/aerial.nvim",
 			opts = {},
 			-- Optional dependencies
 			dependencies = {
 				"nvim-treesitter/nvim-treesitter",
-				"nvim-tree/nvim-web-devicons"
+				"nvim-tree/nvim-web-devicons",
 			},
-		}
+		},
+		{
+			"alvarosevilla95/luatab.nvim",
+			dependencies = {
+				"nvim-tree/nvim-web-devicons",
+			},
+		},
+		"Th3Whit3Wolf/one-nvim",
 	},
 }

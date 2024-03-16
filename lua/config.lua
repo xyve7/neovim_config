@@ -48,19 +48,16 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.s
 	border = "single",
 })
 vim.diagnostic.config({ float = { border = "single" } })
-cmd([[colorscheme moonfly]])
+cmd([[colorscheme tokyonight]])
 
 -- Keybinds
 -- General
-vim.keymap.set("n", "<leader>q", ":q<cr>")
-vim.keymap.set("n", "<leader>qa", ":q<cr>")
-vim.keymap.set("n", "<leader>w", ":w<cr>")
-vim.keymap.set("n", "<leader>wa", ":w<cr>")
-vim.keymap.set("n", "<leader>wq", ":wq<cr>")
-vim.keymap.set("n", "<leader>wqa", ":wqa<cr>")
 vim.keymap.set("n", "<leader>u", ":Telescope undo<cr>")
 vim.keymap.set("n", "<leader>t", ":ToggleTerm name=shell direction=horizontal<cr>")
 vim.keymap.set("n", "<leader>a", ":AerialToggle<cr>")
+vim.keymap.set("n", "<A-Right>", ":bnext<cr>")
+vim.keymap.set("n", "<A-Left>", ":bprevious<cr>")
+vim.keymap.set("n", "<A-Q>", ":bdelete<cr>")
 
 -- LSP
 -- Show diagnostic window for the error
