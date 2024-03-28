@@ -12,6 +12,7 @@ fmt.setup({
 		fmt.builtins.formatting.stylua,
 		fmt.builtins.formatting.asmfmt,
 		fmt.builtins.formatting.gofmt,
+		fmt.builtins.formatting.zigfmt,
 	},
 	-- Format on save
 	on_attach = function(client, bufnr)
@@ -135,6 +136,12 @@ lsp.gopls.setup({
 	capabilities = capabilities,
 })
 lsp.asm_lsp.setup({
+	capabilities = capabilities,
+})
+lsp.zls.setup({
+	capabilities = capabilities,
+})
+lsp.java_language_server.setup({
 	capabilities = capabilities,
 })
 lsp.lua_ls.setup({
