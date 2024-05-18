@@ -53,11 +53,9 @@ cmd([[colorscheme tokyonight]])
 -- Keybinds
 -- General
 vim.keymap.set("n", "<leader>u", ":Telescope undo<cr>")
-vim.keymap.set("n", "<leader>t", ":ToggleTerm name=shell direction=horizontal<cr>")
-vim.keymap.set("n", "<leader>a", ":AerialToggle<cr>")
 vim.keymap.set("n", "<A-Right>", ":bn<cr>")
 vim.keymap.set("n", "<A-Left>", ":bp<cr>")
-vim.keymap.set("n", "<A-q>", ":bp<BAR>bd#<cr>")
+vim.keymap.set("n", "<A-q>", ":bw<cr>")
 
 -- LSP
 -- Show diagnostic window for the error
