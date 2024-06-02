@@ -48,7 +48,6 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.s
 	border = "single",
 })
 vim.diagnostic.config({ float = { border = "single" } })
-cmd([[colorscheme tokyonight]])
 
 -- Keybinds
 -- General

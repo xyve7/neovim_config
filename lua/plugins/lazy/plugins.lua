@@ -37,6 +37,7 @@ return {
 			dependencies = {
 				"neovim/nvim-lspconfig",
 				"hrsh7th/cmp-nvim-lsp",
+				"hrsh7th/cmp-nvim-lsp-signature-help",
 				"hrsh7th/cmp-nvim-lua",
 				"hrsh7th/cmp-buffer",
 				"hrsh7th/cmp-path",
@@ -65,5 +66,10 @@ return {
 			end,
 		},
 		"Th3Whit3Wolf/one-nvim",
+		"nyoom-engineering/oxocarbon.nvim",
+		"rose-pine/neovim",
+		"paulfrische/reddish.nvim",
+		"AlexvZyl/nordic.nvim",
+		"Mofiqul/dracula.nvim",
 	},
 }
